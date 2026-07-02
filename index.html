@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:#fff;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* Header */
+
+header{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+    flex-wrap:wrap;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h3{
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+.hero-text h1{
+    font-size:55px;
+}
+
+.hero-text span{
+    color:#38bdf8;
+}
+
+.hero-text p{
+    margin:20px 0;
+    color:#cbd5e1;
+    line-height:1.8;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 30px;
+    background:#38bdf8;
+    color:#000;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    background:white;
+}
+
+.hero-image{
+    flex:1;
+    text-align:center;
+}
+
+.hero-image img{
+    width:320px;
+    height:320px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid #38bdf8;
+}
+
+/* Section */
+
+section{
+    padding:80px 0;
+}
+
+.title{
+    text-align:center;
+    font-size:35px;
+    color:#38bdf8;
+    margin-bottom:40px;
+}
+
+.about p{
+    max-width:800px;
+    margin:auto;
+    text-align:center;
+    line-height:1.8;
+    color:#d1d5db;
+}
+
+/* Skills */
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.skill{
+    background:#1e293b;
+    padding:25px;
+    text-align:center;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.skill:hover{
+    transform:translateY(-8px);
+    background:#38bdf8;
+    color:black;
+}
+
+/* Projects */
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.project{
+    background:#1e293b;
+    padding:25px;
+    border-radius:12px;
+}
+
+.project h3{
+    margin-bottom:15px;
+    color:#38bdf8;
+}
+
+.project p{
+    color:#d1d5db;
+}
+
+/* Contact */
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:10px 0;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    background:#020617;
+    color:#94a3b8;
+}
+
+@media(max-width:768px){
+
+.hero{
+    flex-direction:column-reverse;
+    text-align:center;
+}
+
+.hero-text h1{
+    font-size:40px;
+}
+
+.hero-image img{
+    width:250px;
+    height:250px;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<div class="container hero">
+
+<div class="hero-text">
+<h3>Hello, I'm</h3>
+<h1>Your <span>Name</span></h1>
+
+<p>
+A passionate Web Developer who enjoys creating beautiful,
+responsive, and user-friendly websites. I love learning new
+technologies and solving real-world problems through code.
+</p>
+
+<a href="#contact" class="btn">Contact Me</a>
+
+</div>
+
+<div class="hero-image">
+<img src="https://via.placeholder.com/320" alt="Profile Photo">
+</div>
+
+</div>
+</header>
+
+<section id="about">
+<div class="container about">
+
+<h2 class="title">About Me</h2>
+
+<p>
+I specialize in HTML, CSS, JavaScript, and modern web
+technologies. My goal is to build fast, clean, and attractive
+web applications while continuously improving my skills.
+</p>
+
+</div>
+</section>
+
+<section id="skills">
+<div class="container">
+
+<h2 class="title">Skills</h2>
+
+<div class="skills">
+
+<div class="skill">HTML5</div>
+<div class="skill">CSS3</div>
+<div class="skill">JavaScript</div>
+<div class="skill">React</div>
+<div class="skill">Python</div>
+<div class="skill">Responsive Design</div>
+
+</div>
+
+</div>
+</section>
+
+<section id="projects">
+
+<div class="container">
+
+<h2 class="title">Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+<h3>Portfolio Website</h3>
+<p>
+A responsive personal portfolio showcasing projects and skills.
+</p>
+</div>
+
+<div class="project">
+<h3>Weather App</h3>
+<p>
+Weather application using an API with real-time forecasts.
+</p>
+</div>
+
+<div class="project">
+<h3>Task Manager</h3>
+<p>
+A simple productivity app for managing daily tasks.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<div class="container contact">
+
+<h2 class="title">Contact</h2>
+
+<p>📧 your@email.com</p>
+<p>📱 +123 456 7890</p>
+<p>🌐 www.yourwebsite.com</p>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Your Name | All Rights Reserved
+</footer>
+
+</body>
+</html>
